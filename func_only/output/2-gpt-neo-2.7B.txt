@@ -1,0 +1,15 @@
+
+  i % 2 == 0
+end
+
+You don't even need to convert the range into an array (which is the correct method):
+def is_even(i)
+  (i % 2 == 0) == 0
+end
+
+Or, in Ruby, (I think) a method is better:
+def is_even(i)
+  (i % 2 == 0).zero?
+end
+
+<|endoftext|>

@@ -1,0 +1,38 @@
+ == 0
+
+@pytest.fixture(scope="module")
+def is_zero(m):
+    """
+    Check whether a number is zero
+    """
+    return m.is_zero()
+
+
+@pytest.fixture(scope="module", params=[True, False])
+def is_one(m):
+    """
+    Check whether a number is one
+    """
+    return m.is_one()
+
+
+@pytest.fixture(scope="module")
+def num_range(m):
+    """
+    The number range from min to max
+    """
+    return m.num_range()
+
+
+def test_int(m):
+    assert is_zero(m.int(0))
+    assert is_zero(m.int(99))
+    assert is_zero(m.int(-99))
+
+
+def test_int_invalid(m):
+    assert is_zero(m.int(0))
+    assert is_zero(m.int(1))
+
+
+def test_int_invalid_negative(

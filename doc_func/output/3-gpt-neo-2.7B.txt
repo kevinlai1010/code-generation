@@ -1,0 +1,27 @@
+
+
+def mod(m, n):
+    """Return the remainder after division of numbers m and n"""
+    return m % n
+
+def mod_square(m, n):
+    """Return the remainder after division of numbers m and n which are multiples of m"""
+    return m % n
+
+def mod_mod(m, n):
+    """Return the remainder after division of numbers m and n, which are multiples of m and n"""
+    return m % n
+
+def mod_div(m, n):
+    """Return the remainder after division of numbers m and n, which are multiples of m and n"""
+    return m % n
+
+def mod_mod_square(m, n):
+    """Return the remainder after division of numbers m and n, which are multiples of m and n"""
+    return m % n
+
+def mod_mod_mod(m, n):
+    """Return the remainder after division of numbers m and n, which are multiples of m and n"""
+    return m % n
+
+def mod_mod_mod_square(m, n

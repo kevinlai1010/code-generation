@@ -1,0 +1,13 @@
+
+
+def is_wordlike(s):
+    """Check whether a string is a word like string"""
+    for i in range(len(s) - 1, -1, -1):
+        if any(ord(c) in string.ascii_lowercase for c in s[i:i+1]) or \
+           any(ord(c) in string.ascii_uppercase for c in s[i:i+1]) or \
+           any(ord(c) > 0 for c in s[i:i+1]) or \
+           any(ord(c) < 0 for c in s[i:i+1])):
+            return False
+    return True
+
+def is_letter_like
